@@ -1,17 +1,33 @@
 public class User {
-    String name;
-    int age;
+    String userId;
+    String password;
+    String email;
+    String userType;
 
-    User(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public User(String userId, String password, String email, String userType) {
+        this.userId = userId;
+        this.password = password;
+        this.email = email;
+        this.userType = userType;
     }
 
-    public String getName() {
-        return name;
+    public void createUser() {
+        System.out.println("email " + email + "by" + userId);
     }
 
-    public int getAge() {
-        return age;
+    public void resetPassword() {
+        System.out.println("password reseted " + userId);
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getUserType() {
+        return userType;
     }
 }
