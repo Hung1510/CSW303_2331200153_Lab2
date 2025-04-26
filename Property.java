@@ -1,11 +1,19 @@
 public class Property {
-    int PropertyId;
-    String Description;
-    int PropertyOwnerId;
-    public Property(int propertyId, String description, int propertyOwnerId) {
-        this.PropertyId = propertyId;
-        this.Description = description;
-        this.PropertyOwnerId = propertyOwnerId;
+    String propertyId;
+    String description;
+    String propertyOwnerId;
+
+    public Property(String propertyId, String description, String propertyOwnerId) {
+        this.propertyId = propertyId;
+        this.description = description;
+        this.propertyOwnerId = propertyOwnerId;
     }
-    
+
+    public String getPropertyId() {
+        return propertyId;
+    }
+
+    public String getPropertyOwnerId() {
+        return propertyOwnerId;
+    }
 }
