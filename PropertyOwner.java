@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,5 +26,4 @@ public class PropertyOwner {
     public void setUser(User user) {
         this.user = user;
     }
-
 }
